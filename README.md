@@ -41,7 +41,7 @@ Sistema simples de gerenciamento de estoque feito com **Python** e **SQLite**. P
 
 <p align="center">
 1. Clone o repositório:  
-<pre><code>git clone https://github.com/kevinscodes/estoque+.git</code></pre>
+<pre><code>git clone https://github.com/kevinscodes/estoque-plus.git</code></pre>
 2. Abra o projeto com seu editor de preferência.
 3. Execute o arquivo principal:  
 <pre><code>python app.py</code></pre>
