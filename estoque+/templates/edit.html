@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Produto{% endblock %}
+
+{% block content %}
+<div class="card form-card">
+    <h2 class="form-title">Editar Produto: {{ produto[1] }}</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" value="{{ produto[1] }}" required>
+        </div>
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" value="{{ produto[2] }}" required min="0">
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço (R$):</label>
+            <input type="number" id="preco" name="preco" value="{{ "%.2f"|format(produto[3]) }}" required step="0.01" min="0">
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Atualizar Produto</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary btn-submit">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

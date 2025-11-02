@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gerenciamento de Estoque{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5164/5164023.png">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1><a href="{{ url_for('index') }}">Estoque+</a></h1>
+        </div>
+    </div>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <p>Kevin Moreira &copy</p>
+        </div>
+    </div>
+</html>

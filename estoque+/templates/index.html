@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Estoque+{% endblock %}
+
+{% block content %}
+<div class="actions-header">
+    <h2>Estoque Atual</h2>
+    <div class="search-and-add">
+        <form method="GET" action="{{ url_for('index') }}" class="search-form">
+            <input type="text" name="search" placeholder="Buscar por nome..." value="{{ search_query if search_query }}" class="search-input">
+            <button type="submit" class="btn btn-primary btn-search">Buscar</button>
+            {% if search_query %}
+            <a href="{{ url_for('index') }}" class="btn btn-secondary btn-clear-search">Limpar</a>
+            {% endif %}
+        </form>
+        <a href="{{ url_for('add') }}" class="btn btn-primary">Adicionar Novo Produto</a>
+    </div>
+    </div>
+
+{% if produtos %}
+    <div class="table-responsive-wrapper">
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                <tr class="product-row">
+                    <td data-title="ID">{{ produto[0] }}</td>
+                    <td data-title="Nome" class="product-name-col">{{ produto[1] }}</td>
+                    <td data-title="Quantidade" class="qty-col">{{ produto[2] }}</td>
+                    <td data-title="Preço" class="price-col">R$ {{ "%.2f"|format(produto[3]) }}</td>
+                    <td data-title="Ações" class="actions-col">
+                        <a href="{{ url_for('edit', id=produto[0]) }}" class="btn btn-action btn-edit">Editar</a>
+                        <a href="{{ url_for('delete', id=produto[0]) }}" class="btn btn-action btn-delete" onclick="return confirm('Tem certeza que deseja deletar o produto: {{ produto[1] }}?');">Deletar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="card empty-state">
+        {% if search_query %}
+        <p>Nenhum produto encontrado com o nome "{{ search_query }}". <a href="{{ url_for('index') }}">Limpar Filtro</a></p>
+        {% else %}
+        <p>Nenhum produto encontrado no estoque. <a href="{{ url_for('add') }}">Adicione um agora!</a></p>
+        {% endif %}
+    </div>
+{% endif %}
+{% endblock %}

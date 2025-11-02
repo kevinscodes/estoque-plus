@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Adicionar Produto{% endblock %}
+
+{% block content %}
+<div class="card form-card">
+    <h2 class="form-title">Adicionar Novo Produto</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Ex: Monitor LED 27 polegadas">
+        </div>
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required min="0" placeholder="Ex: 50">
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço (R$):</label>
+            <input type="number" id="preco" name="preco" required step="0.01" min="0" placeholder="Ex: 1250.99">
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Salvar Produto</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary btn-submit">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
