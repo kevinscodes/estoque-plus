@@ -17,7 +17,9 @@ Sistema simples de gerenciamento de estoque feito com Python e SQLite. Permite a
 
 ## Preview / Demo
 
-![Logo do Estoque+](images/logo.png)
+![Preview](estoque-plus/images/one.png)
+![Preview](estoque-plus/images/two.png)
+![Preview](estoque-plus/images/three.png)
 
 ## Tecnologias
 
