@@ -1,4 +1,3 @@
-{"variant":"standard","title":"README.md para projeto Estoque+","id":"91427"}
 # Estoque+
 
 ![Logo do Projeto](images/logo.png)
