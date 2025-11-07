@@ -55,3 +55,11 @@ Ideal para aprendizado ou para quem quer uma solução básica de controle de in
 1. Clone o repositório:  
    ```bash
    git clone https://github.com/kevinscodes/estoque-plus.git
+
+2. Abra o diretório raiz (estoque-plus)
+
+3. Execute o arquivo "server.py" no editor de código
+   Exemplo usando Prompt de comando do Windows:
+   '''bash
+   python app.py
+   
