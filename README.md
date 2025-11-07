@@ -24,8 +24,8 @@ Ideal para aprendizado ou para quem quer uma solução básica de controle de in
 ## 🖼️ Preview / Demo - Desktop
 
 <p align="center">
-  <img src="estoque-plus/src/one.png" alt="Tela Inicial" width="300" height="500"/>
-  <img src="estoque-plus/src/two.png" alt="Adicionar Produto" width="300"/>
+  <img src="estoque-plus/images/one.png" alt="Tela Inicial" width="300" height="500"/>
+  <img src="estoque-plus/images/two.png" alt="Adicionar Produto" width="300"/>
 </p>
 
 ---
@@ -33,9 +33,9 @@ Ideal para aprendizado ou para quem quer uma solução básica de controle de in
 ## 📱 Preview / Demo - Mobile
 
 <p align="center">
-  <img src="estoque-plus/src/mone.png" alt="Tela Inicial" width="220"/>
-  <img src="estoque-plus/src/mtwo.png" alt="Adicionar Produto" width="220"/>
-  <img src="estoque-plus/src/mthree.png" alt="Remover Produto" width="220"/>
+  <img src="estoque-plus/images/mone.png" alt="Tela Inicial" width="220"/>
+  <img src="estoque-plus/images/mtwo.png" alt="Adicionar Produto" width="220"/>
+  <img src="estoque-plus/images/mthree.png" alt="Remover Produto" width="220"/>
 </p>
 
 ---
