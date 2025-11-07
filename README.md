@@ -64,13 +64,4 @@ Ideal para aprendizado ou para quem quer uma solução básica de controle de in
     ```bash
    python app.py
 
-## Visual Studio Code
-
-<video src="estoque-plus/images/servervs" width="600" controls></video>
-
-## Prompt de Comando (Windows)
-
-<video src="estoque-pkus/images/servercmd" width="600" controls></video>
-
-
    
